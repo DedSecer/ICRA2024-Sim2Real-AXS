@@ -50,9 +50,9 @@ OMNIGIBSON_HEADLESS=0
 DOCKER_DISPLAY=$DISPLAY
 
 
-sudo docker rm -f omnigibson_env
+docker rm -f omnigibson_env
 
-sudo docker run -it --name omnigibson_env --network host\
+docker run -it --name omnigibson_env --network host\
     --gpus all \
     --privileged \
     -e DISPLAY=${DOCKER_DISPLAY} \
