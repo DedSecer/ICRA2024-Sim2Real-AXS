@@ -1,3 +1,4 @@
+#!/usr/bin/sh
 sudo docker rm -f baseline
 
 sudo docker run -it --name baseline --network=host \
