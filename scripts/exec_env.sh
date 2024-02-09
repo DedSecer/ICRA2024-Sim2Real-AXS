@@ -1,4 +1,4 @@
 #!/usr/bin/sh
 xhost +
-docker start omnigibson_env
-docker exec -it omnigibson_env /bin/bash
+docker start env
+docker exec -it env /bin/bash
